@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C606D2A4166AE1E600FA7B70 /* VWWThereminSettingsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C606D28F166AE1E500FA7B70 /* VWWThereminSettingsViewController.mm */; };
+		C606D2A7166AE1E600FA7B70 /* VWWMotionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C606D297166AE1E500FA7B70 /* VWWMotionMonitor.m */; };
+		C606D2A8166AE1E600FA7B70 /* VWWThereminNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = C606D29A166AE1E500FA7B70 /* VWWThereminNotes.m */; };
+		C606D2A9166AE1E600FA7B70 /* VWWThereminSynthesizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C606D29C166AE1E500FA7B70 /* VWWThereminSynthesizer.mm */; };
+		C606D2B1166AE20C00FA7B70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C606D2AC166AE20C00FA7B70 /* main.m */; };
+		C606D2B3166AE20C00FA7B70 /* VWWAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C606D2B0166AE20C00FA7B70 /* VWWAppDelegate.mm */; };
+		C606D2C0166AE3A200FA7B70 /* VWWCubeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C606D2BD166AE3A200FA7B70 /* VWWCubeScene.m */; };
+		C606D2C1166AE3A200FA7B70 /* VWWScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C606D2BF166AE3A200FA7B70 /* VWWScene.m */; };
+		C606D2CB166AE40F00FA7B70 /* VWWSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C606D2C9166AE40F00FA7B70 /* VWWSquareModel.m */; };
+		C60E4FF8169807C8006BD352 /* custom.strings in Resources */ = {isa = PBXBuildFile; fileRef = C60E4FF7169807C8006BD352 /* custom.strings */; };
+		C632762317F0A68C008B028F /* VWWSettingsGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C632762217F0A68C008B028F /* VWWSettingsGeneralViewController.m */; };
+		C632762517F0A708008B028F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C632762417F0A708008B028F /* MessageUI.framework */; };
+		C63660E417EE4D720004C22E /* VWWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63660E317EE4D720004C22E /* VWWSettingsViewController.m */; };
+		C63EDF29169BC74F0036E49B /* VWWThereminAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EDF28169BC74F0036E49B /* VWWThereminAboutView.m */; };
+		C63EDF2D169BC83F0036E49B /* VWWThereminSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EDF2C169BC83F0036E49B /* VWWThereminSettingsView.m */; };
+		C63EDF30169BFB530036E49B /* paid_vs_free.txt in Resources */ = {isa = PBXBuildFile; fileRef = C63EDF2F169BFB530036E49B /* paid_vs_free.txt */; };
+		C64ACE2917F691AE0099BD67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64ACE2817F691AE0099BD67 /* Images.xcassets */; };
+		C6747F66168FEC40007133AD /* VWWThereminConfigInputEffectsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6747F65168FEC40007133AD /* VWWThereminConfigInputEffectsViewController.mm */; };
+		C6747F6A168FECDF007133AD /* VWWConfigInputEffectsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6747F69168FECDF007133AD /* VWWConfigInputEffectsView.m */; };
+		C68DE758169E26DA001C54DB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68DE757169E26DA001C54DB /* iAd.framework */; };
+		C6A94FD4168FC8AE003F2AFE /* VWWConfigInputWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A94FD3168FC8AE003F2AFE /* VWWConfigInputWaveformView.m */; };
+		C6A94FD7168FC8C1003F2AFE /* VWWConfigInputSensitivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A94FD6168FC8C1003F2AFE /* VWWConfigInputSensitivityView.m */; };
+		C6AA54F917EE662A004AAC8D /* VWWSettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA54F817EE662A004AAC8D /* VWWSettingsTableViewCell.m */; };
+		C6AA54FD17EE6A70004AAC8D /* VWWSettingsAxisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA54FC17EE6A70004AAC8D /* VWWSettingsAxisViewController.m */; };
+		C6AA550017EE6C41004AAC8D /* VWWSettingsAxisTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA54FF17EE6C41004AAC8D /* VWWSettingsAxisTableViewCell.m */; };
+		C6AA550617EE71BB004AAC8D /* VWWSettingsParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA550517EE71BB004AAC8D /* VWWSettingsParametersViewController.m */; };
+		C6AA550917EE71D4004AAC8D /* VWWSettingsParametersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA550817EE71D4004AAC8D /* VWWSettingsParametersTableViewCell.m */; };
+		C6AA550D17EE8BD0004AAC8D /* VWWSettingsFrequencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA550C17EE8BD0004AAC8D /* VWWSettingsFrequencyTableViewCell.m */; };
+		C6AA551017EE8BE4004AAC8D /* VWWSettingsAmplitudeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA550F17EE8BE4004AAC8D /* VWWSettingsAmplitudeTableViewCell.m */; };
+		C6AA551317EE8BF3004AAC8D /* VWWSettingsSensitivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA551217EE8BF3004AAC8D /* VWWSettingsSensitivityTableViewCell.m */; };
+		C6AA551617EE8C03004AAC8D /* VWWSettingsWaveformTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA551517EE8C03004AAC8D /* VWWSettingsWaveformTableViewCell.m */; };
+		C6AA551917EE8C16004AAC8D /* VWWSettingsEffectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AA551817EE8C16004AAC8D /* VWWSettingsEffectTableViewCell.m */; };
+		C6B3E963168BFBB100298AF5 /* VWWConfigInputFrequencyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B3E962168BFBB100298AF5 /* VWWConfigInputFrequencyView.m */; };
+		C6C1BC2C169BA4B400AD8244 /* VWWThereminEffectNoteKey.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1BC2B169BA4B400AD8244 /* VWWThereminEffectNoteKey.m */; };
+		C6CE37B0168EC67C000F2A48 /* VWWThereminInputAxis.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6CE37AF168EC67C000F2A48 /* VWWThereminInputAxis.mm */; };
+		C6CE37B2168EC804000F2A48 /* VWWThereminInput.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6CE37B1168EC804000F2A48 /* VWWThereminInput.mm */; };
+		C6CE37B8168ECFC4000F2A48 /* VWWThereminInputs.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6CE37B7168ECFC4000F2A48 /* VWWThereminInputs.mm */; };
+		C6CE37BB168ED120000F2A48 /* VWWLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE37BA168ED120000F2A48 /* VWWLine.m */; };
+		C6CE37BE168F1D3F000F2A48 /* VWWThereminConfigInputWaveformsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6CE37BD168F1D3E000F2A48 /* VWWThereminConfigInputWaveformsViewController.mm */; };
+		C6CE37C1168F1DB7000F2A48 /* VWWThereminConfigInputSensitivityViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6CE37C0168F1DB7000F2A48 /* VWWThereminConfigInputSensitivityViewController.mm */; };
+		C6DAB1DC169112540056E769 /* VWWFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DAB1DB169112540056E769 /* VWWFileSystem.m */; };
+		C6E34B80166AE52800D0AB2C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E34B7E166AE52700D0AB2C /* GLKit.framework */; };
+		C6E34B81166AE52800D0AB2C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E34B7F166AE52700D0AB2C /* OpenGLES.framework */; };
+		C6E34B9D166AE89600D0AB2C /* VWWThereminViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6E34B9C166AE89600D0AB2C /* VWWThereminViewController.mm */; };
+		C6EB888A168B975600DD1F3E /* VWWThereminAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EB8889168B975600DD1F3E /* VWWThereminAboutViewController.m */; };
+		C6EB88AC168BF2A100DD1F3E /* VWWThereminConfigInputFrequencyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6EB88AB168BF2A100DD1F3E /* VWWThereminConfigInputFrequencyViewController.mm */; };
+		C6F23BC9169951B9001C8FA8 /* VWWThereminConfigInputAmplitudeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6F23BC8169951B9001C8FA8 /* VWWThereminConfigInputAmplitudeViewController.mm */; };
+		C6F23BCD16995399001C8FA8 /* VWWConfigInputAmplitudeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F23BCC16995399001C8FA8 /* VWWConfigInputAmplitudeView.m */; };
+		C6F23BD0169A96BD001C8FA8 /* VWWThereminConfigInputKeyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6F23BCF169A96BD001C8FA8 /* VWWThereminConfigInputKeyViewController.mm */; };
+		C6F23BD3169A96D6001C8FA8 /* VWWConfigInputKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F23BD2169A96D6001C8FA8 /* VWWConfigInputKeyView.m */; };
+		C6F7537715C6313C00911E59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7537615C6313C00911E59 /* UIKit.framework */; };
+		C6F7537915C6313C00911E59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7537815C6313C00911E59 /* Foundation.framework */; };
+		C6F7537B15C6313C00911E59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7537A15C6313C00911E59 /* CoreGraphics.framework */; };
+		C6F7538115C6313C00911E59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6F7537F15C6313C00911E59 /* InfoPlist.strings */; };
+		C6F7538A15C6313C00911E59 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F7538815C6313C00911E59 /* MainStoryboard_iPhone.storyboard */; };
+		C6F7538D15C6313C00911E59 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F7538B15C6313C00911E59 /* MainStoryboard_iPad.storyboard */; };
+		C6F7539815C6313C00911E59 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7539715C6313C00911E59 /* SenTestingKit.framework */; };
+		C6F7539915C6313C00911E59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7537615C6313C00911E59 /* UIKit.framework */; };
+		C6F7539A15C6313C00911E59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7537815C6313C00911E59 /* Foundation.framework */; };
+		C6F753A215C6313C00911E59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6F753A015C6313C00911E59 /* InfoPlist.strings */; };
+		C6F753A515C6313C00911E59 /* ThereminTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6F753A415C6313C00911E59 /* ThereminTests.mm */; };
+		C6F829AF1628C6E900C79CAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F829AC1628C6E900C79CAA /* AudioToolbox.framework */; };
+		C6F829B01628C6E900C79CAA /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F829AD1628C6E900C79CAA /* CoreAudio.framework */; };
+		C6F829B11628C6E900C79CAA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F829AE1628C6E900C79CAA /* CoreMotion.framework */; };
+		C6F829BE1628C80B00C79CAA /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6F829B61628C80B00C79CAA /* CADebugMacros.cpp */; };
+		C6F829BF1628C80B00C79CAA /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6F829BA1628C80B00C79CAA /* CAStreamBasicDescription.cpp */; };
+		C6F829C01628C80B00C79CAA /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6F829BC1628C80B00C79CAA /* CAXException.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6F7539B15C6313C00911E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6F7536915C6313C00911E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6F7537115C6313C00911E59;
+			remoteInfo = Theremin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C606D28E166AE1E500FA7B70 /* VWWThereminSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminSettingsViewController.h; sourceTree = "<group>"; };
+		C606D28F166AE1E500FA7B70 /* VWWThereminSettingsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminSettingsViewController.mm; sourceTree = "<group>"; };
+		C606D293166AE1E500FA7B70 /* todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
+		C606D296166AE1E500FA7B70 /* VWWMotionMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWMotionMonitor.h; sourceTree = "<group>"; };
+		C606D297166AE1E500FA7B70 /* VWWMotionMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWMotionMonitor.m; sourceTree = "<group>"; };
+		C606D299166AE1E500FA7B70 /* VWWThereminNotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminNotes.h; sourceTree = "<group>"; };
+		C606D29A166AE1E500FA7B70 /* VWWThereminNotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWThereminNotes.m; sourceTree = "<group>"; };
+		C606D29B166AE1E500FA7B70 /* VWWThereminSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminSynthesizer.h; sourceTree = "<group>"; };
+		C606D29C166AE1E500FA7B70 /* VWWThereminSynthesizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminSynthesizer.mm; sourceTree = "<group>"; };
+		C606D2AC166AE20C00FA7B70 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C606D2AD166AE20C00FA7B70 /* Theremin-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Theremin-Info.plist"; sourceTree = "<group>"; };
+		C606D2AE166AE20C00FA7B70 /* Theremin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Theremin-Prefix.pch"; sourceTree = "<group>"; };
+		C606D2AF166AE20C00FA7B70 /* VWWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWAppDelegate.h; sourceTree = "<group>"; };
+		C606D2B0166AE20C00FA7B70 /* VWWAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWAppDelegate.mm; sourceTree = "<group>"; };
+		C606D2B8166AE34100FA7B70 /* VWWThereminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminViewController.h; sourceTree = "<group>"; };
+		C606D2BC166AE3A200FA7B70 /* VWWCubeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWCubeScene.h; sourceTree = "<group>"; };
+		C606D2BD166AE3A200FA7B70 /* VWWCubeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWCubeScene.m; sourceTree = "<group>"; };
+		C606D2BE166AE3A200FA7B70 /* VWWScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWScene.h; sourceTree = "<group>"; };
+		C606D2BF166AE3A200FA7B70 /* VWWScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWScene.m; sourceTree = "<group>"; };
+		C606D2C8166AE40F00FA7B70 /* VWWSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSquareModel.h; sourceTree = "<group>"; };
+		C606D2C9166AE40F00FA7B70 /* VWWSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSquareModel.m; sourceTree = "<group>"; };
+		C60E4FF7169807C8006BD352 /* custom.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = custom.strings; sourceTree = "<group>"; };
+		C632762117F0A68C008B028F /* VWWSettingsGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsGeneralViewController.h; sourceTree = "<group>"; };
+		C632762217F0A68C008B028F /* VWWSettingsGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsGeneralViewController.m; sourceTree = "<group>"; };
+		C632762417F0A708008B028F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C63486411697C76800B5E701 /* VWWThereminMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminMath.h; sourceTree = "<group>"; };
+		C63486421697DC2800B5E701 /* VWWThereminTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWWThereminTypes.h; sourceTree = "<group>"; };
+		C63660E217EE4D720004C22E /* VWWSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsViewController.h; sourceTree = "<group>"; };
+		C63660E317EE4D720004C22E /* VWWSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsViewController.m; sourceTree = "<group>"; };
+		C63EDF27169BC74F0036E49B /* VWWThereminAboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminAboutView.h; sourceTree = "<group>"; };
+		C63EDF28169BC74F0036E49B /* VWWThereminAboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWThereminAboutView.m; sourceTree = "<group>"; };
+		C63EDF2B169BC83F0036E49B /* VWWThereminSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminSettingsView.h; sourceTree = "<group>"; };
+		C63EDF2C169BC83F0036E49B /* VWWThereminSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWThereminSettingsView.m; sourceTree = "<group>"; };
+		C63EDF2F169BFB530036E49B /* paid_vs_free.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paid_vs_free.txt; sourceTree = "<group>"; };
+		C64ACE2817F691AE0099BD67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C6747F64168FEC40007133AD /* VWWThereminConfigInputEffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminConfigInputEffectsViewController.h; sourceTree = "<group>"; };
+		C6747F65168FEC40007133AD /* VWWThereminConfigInputEffectsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminConfigInputEffectsViewController.mm; sourceTree = "<group>"; };
+		C6747F68168FECDF007133AD /* VWWConfigInputEffectsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWConfigInputEffectsView.h; sourceTree = "<group>"; };
+		C6747F69168FECDF007133AD /* VWWConfigInputEffectsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWConfigInputEffectsView.m; sourceTree = "<group>"; };
+		C68DE757169E26DA001C54DB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C6A94FD2168FC8AE003F2AFE /* VWWConfigInputWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWConfigInputWaveformView.h; sourceTree = "<group>"; };
+		C6A94FD3168FC8AE003F2AFE /* VWWConfigInputWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWConfigInputWaveformView.m; sourceTree = "<group>"; };
+		C6A94FD5168FC8C1003F2AFE /* VWWConfigInputSensitivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWConfigInputSensitivityView.h; sourceTree = "<group>"; };
+		C6A94FD6168FC8C1003F2AFE /* VWWConfigInputSensitivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWConfigInputSensitivityView.m; sourceTree = "<group>"; };
+		C6AA54F717EE662A004AAC8D /* VWWSettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsTableViewCell.h; sourceTree = "<group>"; };
+		C6AA54F817EE662A004AAC8D /* VWWSettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsTableViewCell.m; sourceTree = "<group>"; };
+		C6AA54FB17EE6A70004AAC8D /* VWWSettingsAxisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsAxisViewController.h; sourceTree = "<group>"; };
+		C6AA54FC17EE6A70004AAC8D /* VWWSettingsAxisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsAxisViewController.m; sourceTree = "<group>"; };
+		C6AA54FE17EE6C41004AAC8D /* VWWSettingsAxisTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsAxisTableViewCell.h; sourceTree = "<group>"; };
+		C6AA54FF17EE6C41004AAC8D /* VWWSettingsAxisTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsAxisTableViewCell.m; sourceTree = "<group>"; };
+		C6AA550417EE71BB004AAC8D /* VWWSettingsParametersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsParametersViewController.h; sourceTree = "<group>"; };
+		C6AA550517EE71BB004AAC8D /* VWWSettingsParametersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsParametersViewController.m; sourceTree = "<group>"; };
+		C6AA550717EE71D4004AAC8D /* VWWSettingsParametersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsParametersTableViewCell.h; sourceTree = "<group>"; };
+		C6AA550817EE71D4004AAC8D /* VWWSettingsParametersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsParametersTableViewCell.m; sourceTree = "<group>"; };
+		C6AA550A17EE7ECE004AAC8D /* VWWSettingsKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsKeys.h; sourceTree = "<group>"; };
+		C6AA550B17EE8BD0004AAC8D /* VWWSettingsFrequencyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsFrequencyTableViewCell.h; sourceTree = "<group>"; };
+		C6AA550C17EE8BD0004AAC8D /* VWWSettingsFrequencyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsFrequencyTableViewCell.m; sourceTree = "<group>"; };
+		C6AA550E17EE8BE4004AAC8D /* VWWSettingsAmplitudeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsAmplitudeTableViewCell.h; sourceTree = "<group>"; };
+		C6AA550F17EE8BE4004AAC8D /* VWWSettingsAmplitudeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsAmplitudeTableViewCell.m; sourceTree = "<group>"; };
+		C6AA551117EE8BF3004AAC8D /* VWWSettingsSensitivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsSensitivityTableViewCell.h; sourceTree = "<group>"; };
+		C6AA551217EE8BF3004AAC8D /* VWWSettingsSensitivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsSensitivityTableViewCell.m; sourceTree = "<group>"; };
+		C6AA551417EE8C03004AAC8D /* VWWSettingsWaveformTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsWaveformTableViewCell.h; sourceTree = "<group>"; };
+		C6AA551517EE8C03004AAC8D /* VWWSettingsWaveformTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsWaveformTableViewCell.m; sourceTree = "<group>"; };
+		C6AA551717EE8C16004AAC8D /* VWWSettingsEffectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWSettingsEffectTableViewCell.h; sourceTree = "<group>"; };
+		C6AA551817EE8C16004AAC8D /* VWWSettingsEffectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSettingsEffectTableViewCell.m; sourceTree = "<group>"; };
+		C6B3E961168BFBB100298AF5 /* VWWConfigInputFrequencyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWConfigInputFrequencyView.h; sourceTree = "<group>"; };
+		C6B3E962168BFBB100298AF5 /* VWWConfigInputFrequencyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWConfigInputFrequencyView.m; sourceTree = "<group>"; };
+		C6C1BC2A169BA4B400AD8244 /* VWWThereminEffectNoteKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminEffectNoteKey.h; sourceTree = "<group>"; };
+		C6C1BC2B169BA4B400AD8244 /* VWWThereminEffectNoteKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWThereminEffectNoteKey.m; sourceTree = "<group>"; };
+		C6CE37A6168EBAE3000F2A48 /* VWWThereminConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWWThereminConfiguration.h; sourceTree = "<group>"; };
+		C6CE37AB168EC640000F2A48 /* VWWThereminInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminInput.h; sourceTree = "<group>"; };
+		C6CE37AE168EC67C000F2A48 /* VWWThereminInputAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminInputAxis.h; sourceTree = "<group>"; };
+		C6CE37AF168EC67C000F2A48 /* VWWThereminInputAxis.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminInputAxis.mm; sourceTree = "<group>"; };
+		C6CE37B1168EC804000F2A48 /* VWWThereminInput.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminInput.mm; sourceTree = "<group>"; };
+		C6CE37B4168ECE15000F2A48 /* VWWThereminInputs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminInputs.h; sourceTree = "<group>"; };
+		C6CE37B7168ECFC4000F2A48 /* VWWThereminInputs.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminInputs.mm; sourceTree = "<group>"; };
+		C6CE37B9168ED11F000F2A48 /* VWWLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWLine.h; path = Theremin/VWWLine.h; sourceTree = SOURCE_ROOT; };
+		C6CE37BA168ED120000F2A48 /* VWWLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWLine.m; path = Theremin/VWWLine.m; sourceTree = SOURCE_ROOT; };
+		C6CE37BC168F1D3E000F2A48 /* VWWThereminConfigInputWaveformsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminConfigInputWaveformsViewController.h; sourceTree = "<group>"; };
+		C6CE37BD168F1D3E000F2A48 /* VWWThereminConfigInputWaveformsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminConfigInputWaveformsViewController.mm; sourceTree = "<group>"; };
+		C6CE37BF168F1DB7000F2A48 /* VWWThereminConfigInputSensitivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminConfigInputSensitivityViewController.h; sourceTree = "<group>"; };
+		C6CE37C0168F1DB7000F2A48 /* VWWThereminConfigInputSensitivityViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminConfigInputSensitivityViewController.mm; sourceTree = "<group>"; };
+		C6DAB1DA169112530056E769 /* VWWFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWFileSystem.h; sourceTree = "<group>"; };
+		C6DAB1DB169112540056E769 /* VWWFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWFileSystem.m; sourceTree = "<group>"; };
+		C6E34B7E166AE52700D0AB2C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C6E34B7F166AE52700D0AB2C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C6E34B9C166AE89600D0AB2C /* VWWThereminViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminViewController.mm; sourceTree = "<group>"; };
+		C6EB8888168B975600DD1F3E /* VWWThereminAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminAboutViewController.h; sourceTree = "<group>"; };
+		C6EB8889168B975600DD1F3E /* VWWThereminAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWThereminAboutViewController.m; sourceTree = "<group>"; };
+		C6EB88AA168BF2A100DD1F3E /* VWWThereminConfigInputFrequencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminConfigInputFrequencyViewController.h; sourceTree = "<group>"; };
+		C6EB88AB168BF2A100DD1F3E /* VWWThereminConfigInputFrequencyViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminConfigInputFrequencyViewController.mm; sourceTree = "<group>"; };
+		C6F23BC7169951B9001C8FA8 /* VWWThereminConfigInputAmplitudeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminConfigInputAmplitudeViewController.h; sourceTree = "<group>"; };
+		C6F23BC8169951B9001C8FA8 /* VWWThereminConfigInputAmplitudeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminConfigInputAmplitudeViewController.mm; sourceTree = "<group>"; };
+		C6F23BCB16995399001C8FA8 /* VWWConfigInputAmplitudeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWConfigInputAmplitudeView.h; sourceTree = "<group>"; };
+		C6F23BCC16995399001C8FA8 /* VWWConfigInputAmplitudeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWConfigInputAmplitudeView.m; sourceTree = "<group>"; };
+		C6F23BCE169A96BD001C8FA8 /* VWWThereminConfigInputKeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWThereminConfigInputKeyViewController.h; sourceTree = "<group>"; };
+		C6F23BCF169A96BD001C8FA8 /* VWWThereminConfigInputKeyViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VWWThereminConfigInputKeyViewController.mm; sourceTree = "<group>"; };
+		C6F23BD1169A96D6001C8FA8 /* VWWConfigInputKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWConfigInputKeyView.h; sourceTree = "<group>"; };
+		C6F23BD2169A96D6001C8FA8 /* VWWConfigInputKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWConfigInputKeyView.m; sourceTree = "<group>"; };
+		C6F7537215C6313C00911E59 /* Theremin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Theremin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F7537615C6313C00911E59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C6F7537815C6313C00911E59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C6F7537A15C6313C00911E59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C6F7538015C6313C00911E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6F7538915C6313C00911E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C6F7538C15C6313C00911E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C6F7539615C6313C00911E59 /* ThereminTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThereminTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F7539715C6313C00911E59 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C6F7539F15C6313C00911E59 /* ThereminTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThereminTests-Info.plist"; sourceTree = "<group>"; };
+		C6F753A115C6313C00911E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6F753A315C6313C00911E59 /* ThereminTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThereminTests.h; sourceTree = "<group>"; };
+		C6F753A415C6313C00911E59 /* ThereminTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ThereminTests.mm; sourceTree = "<group>"; };
+		C6F829AC1628C6E900C79CAA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C6F829AD1628C6E900C79CAA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		C6F829AE1628C6E900C79CAA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C6F829B61628C80B00C79CAA /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		C6F829B71628C80B00C79CAA /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		C6F829B81628C80B00C79CAA /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		C6F829B91628C80B00C79CAA /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		C6F829BA1628C80B00C79CAA /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		C6F829BB1628C80B00C79CAA /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		C6F829BC1628C80B00C79CAA /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		C6F829BD1628C80B00C79CAA /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6F7536F15C6313C00911E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C632762517F0A708008B028F /* MessageUI.framework in Frameworks */,
+				C68DE758169E26DA001C54DB /* iAd.framework in Frameworks */,
+				C6E34B80166AE52800D0AB2C /* GLKit.framework in Frameworks */,
+				C6E34B81166AE52800D0AB2C /* OpenGLES.framework in Frameworks */,
+				C6F829AF1628C6E900C79CAA /* AudioToolbox.framework in Frameworks */,
+				C6F829B01628C6E900C79CAA /* CoreAudio.framework in Frameworks */,
+				C6F829B11628C6E900C79CAA /* CoreMotion.framework in Frameworks */,
+				C6F7537715C6313C00911E59 /* UIKit.framework in Frameworks */,
+				C6F7537915C6313C00911E59 /* Foundation.framework in Frameworks */,
+				C6F7537B15C6313C00911E59 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F7539215C6313C00911E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F7539815C6313C00911E59 /* SenTestingKit.framework in Frameworks */,
+				C6F7539915C6313C00911E59 /* UIKit.framework in Frameworks */,
+				C6F7539A15C6313C00911E59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C606D289166AE1E500FA7B70 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6AA54FA17EE6633004AAC8D /* Cell */,
+				C606D2B8166AE34100FA7B70 /* VWWThereminViewController.h */,
+				C6E34B9C166AE89600D0AB2C /* VWWThereminViewController.mm */,
+				C6EB8888168B975600DD1F3E /* VWWThereminAboutViewController.h */,
+				C6EB8889168B975600DD1F3E /* VWWThereminAboutViewController.m */,
+				C606D28E166AE1E500FA7B70 /* VWWThereminSettingsViewController.h */,
+				C606D28F166AE1E500FA7B70 /* VWWThereminSettingsViewController.mm */,
+				C6F23BC7169951B9001C8FA8 /* VWWThereminConfigInputAmplitudeViewController.h */,
+				C6F23BC8169951B9001C8FA8 /* VWWThereminConfigInputAmplitudeViewController.mm */,
+				C6EB88AA168BF2A100DD1F3E /* VWWThereminConfigInputFrequencyViewController.h */,
+				C6EB88AB168BF2A100DD1F3E /* VWWThereminConfigInputFrequencyViewController.mm */,
+				C6CE37BC168F1D3E000F2A48 /* VWWThereminConfigInputWaveformsViewController.h */,
+				C6CE37BD168F1D3E000F2A48 /* VWWThereminConfigInputWaveformsViewController.mm */,
+				C6CE37BF168F1DB7000F2A48 /* VWWThereminConfigInputSensitivityViewController.h */,
+				C6CE37C0168F1DB7000F2A48 /* VWWThereminConfigInputSensitivityViewController.mm */,
+				C6F23BCE169A96BD001C8FA8 /* VWWThereminConfigInputKeyViewController.h */,
+				C6F23BCF169A96BD001C8FA8 /* VWWThereminConfigInputKeyViewController.mm */,
+				C6747F64168FEC40007133AD /* VWWThereminConfigInputEffectsViewController.h */,
+				C6747F65168FEC40007133AD /* VWWThereminConfigInputEffectsViewController.mm */,
+				C63660E217EE4D720004C22E /* VWWSettingsViewController.h */,
+				C63660E317EE4D720004C22E /* VWWSettingsViewController.m */,
+				C6AA54FB17EE6A70004AAC8D /* VWWSettingsAxisViewController.h */,
+				C6AA54FC17EE6A70004AAC8D /* VWWSettingsAxisViewController.m */,
+				C6AA550417EE71BB004AAC8D /* VWWSettingsParametersViewController.h */,
+				C6AA550517EE71BB004AAC8D /* VWWSettingsParametersViewController.m */,
+				C632762117F0A68C008B028F /* VWWSettingsGeneralViewController.h */,
+				C632762217F0A68C008B028F /* VWWSettingsGeneralViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C606D292166AE1E500FA7B70 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				C60E4FF7169807C8006BD352 /* custom.strings */,
+				C606D293166AE1E500FA7B70 /* todo.txt */,
+				C63EDF2F169BFB530036E49B /* paid_vs_free.txt */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		C606D294166AE1E500FA7B70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6DAB1D81691123B0056E769 /* File */,
+				C6CE37B3168EC870000F2A48 /* Inputs */,
+				C6EB8880168B921900DD1F3E /* OpenGL */,
+				C606D295166AE1E500FA7B70 /* Motion */,
+				C606D298166AE1E500FA7B70 /* Synthesizer */,
+				C6CE37B9168ED11F000F2A48 /* VWWLine.h */,
+				C6CE37BA168ED120000F2A48 /* VWWLine.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C606D295166AE1E500FA7B70 /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				C606D296166AE1E500FA7B70 /* VWWMotionMonitor.h */,
+				C606D297166AE1E500FA7B70 /* VWWMotionMonitor.m */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+		C606D298166AE1E500FA7B70 /* Synthesizer */ = {
+			isa = PBXGroup;
+			children = (
+				C6F829B51628C80B00C79CAA /* Apple CA Helpers */,
+				C63486421697DC2800B5E701 /* VWWThereminTypes.h */,
+				C63486411697C76800B5E701 /* VWWThereminMath.h */,
+				C606D299166AE1E500FA7B70 /* VWWThereminNotes.h */,
+				C606D29A166AE1E500FA7B70 /* VWWThereminNotes.m */,
+				C606D29B166AE1E500FA7B70 /* VWWThereminSynthesizer.h */,
+				C606D29C166AE1E500FA7B70 /* VWWThereminSynthesizer.mm */,
+			);
+			path = Synthesizer;
+			sourceTree = "<group>";
+		};
+		C606D29F166AE1E500FA7B70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6F23BCB16995399001C8FA8 /* VWWConfigInputAmplitudeView.h */,
+				C6F23BCC16995399001C8FA8 /* VWWConfigInputAmplitudeView.m */,
+				C6B3E961168BFBB100298AF5 /* VWWConfigInputFrequencyView.h */,
+				C6B3E962168BFBB100298AF5 /* VWWConfigInputFrequencyView.m */,
+				C6A94FD2168FC8AE003F2AFE /* VWWConfigInputWaveformView.h */,
+				C6A94FD3168FC8AE003F2AFE /* VWWConfigInputWaveformView.m */,
+				C6A94FD5168FC8C1003F2AFE /* VWWConfigInputSensitivityView.h */,
+				C6A94FD6168FC8C1003F2AFE /* VWWConfigInputSensitivityView.m */,
+				C6F23BD1169A96D6001C8FA8 /* VWWConfigInputKeyView.h */,
+				C6F23BD2169A96D6001C8FA8 /* VWWConfigInputKeyView.m */,
+				C6747F68168FECDF007133AD /* VWWConfigInputEffectsView.h */,
+				C6747F69168FECDF007133AD /* VWWConfigInputEffectsView.m */,
+				C63EDF27169BC74F0036E49B /* VWWThereminAboutView.h */,
+				C63EDF28169BC74F0036E49B /* VWWThereminAboutView.m */,
+				C63EDF2B169BC83F0036E49B /* VWWThereminSettingsView.h */,
+				C63EDF2C169BC83F0036E49B /* VWWThereminSettingsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C606D2BB166AE3A200FA7B70 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C606D2BE166AE3A200FA7B70 /* VWWScene.h */,
+				C606D2BF166AE3A200FA7B70 /* VWWScene.m */,
+				C606D2BC166AE3A200FA7B70 /* VWWCubeScene.h */,
+				C606D2BD166AE3A200FA7B70 /* VWWCubeScene.m */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C606D2C5166AE40F00FA7B70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C606D2C8166AE40F00FA7B70 /* VWWSquareModel.h */,
+				C606D2C9166AE40F00FA7B70 /* VWWSquareModel.m */,
+			);
+			name = Model;
+			path = GLModel;
+			sourceTree = "<group>";
+		};
+		C6357CEB15C7A55C0074E722 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C64ACE2817F691AE0099BD67 /* Images.xcassets */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		C6AA54FA17EE6633004AAC8D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C6AA54F717EE662A004AAC8D /* VWWSettingsTableViewCell.h */,
+				C6AA54F817EE662A004AAC8D /* VWWSettingsTableViewCell.m */,
+				C6AA54FE17EE6C41004AAC8D /* VWWSettingsAxisTableViewCell.h */,
+				C6AA54FF17EE6C41004AAC8D /* VWWSettingsAxisTableViewCell.m */,
+				C6AA550717EE71D4004AAC8D /* VWWSettingsParametersTableViewCell.h */,
+				C6AA550817EE71D4004AAC8D /* VWWSettingsParametersTableViewCell.m */,
+				C6AA550B17EE8BD0004AAC8D /* VWWSettingsFrequencyTableViewCell.h */,
+				C6AA550C17EE8BD0004AAC8D /* VWWSettingsFrequencyTableViewCell.m */,
+				C6AA550E17EE8BE4004AAC8D /* VWWSettingsAmplitudeTableViewCell.h */,
+				C6AA550F17EE8BE4004AAC8D /* VWWSettingsAmplitudeTableViewCell.m */,
+				C6AA551117EE8BF3004AAC8D /* VWWSettingsSensitivityTableViewCell.h */,
+				C6AA551217EE8BF3004AAC8D /* VWWSettingsSensitivityTableViewCell.m */,
+				C6AA551417EE8C03004AAC8D /* VWWSettingsWaveformTableViewCell.h */,
+				C6AA551517EE8C03004AAC8D /* VWWSettingsWaveformTableViewCell.m */,
+				C6AA551717EE8C16004AAC8D /* VWWSettingsEffectTableViewCell.h */,
+				C6AA551817EE8C16004AAC8D /* VWWSettingsEffectTableViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		C6C1BC28169BA4A000AD8244 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				C6C1BC2A169BA4B400AD8244 /* VWWThereminEffectNoteKey.h */,
+				C6C1BC2B169BA4B400AD8244 /* VWWThereminEffectNoteKey.m */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		C6CE37B3168EC870000F2A48 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				C6C1BC28169BA4A000AD8244 /* Effects */,
+				C6CE37B4168ECE15000F2A48 /* VWWThereminInputs.h */,
+				C6CE37B7168ECFC4000F2A48 /* VWWThereminInputs.mm */,
+				C6CE37AB168EC640000F2A48 /* VWWThereminInput.h */,
+				C6CE37B1168EC804000F2A48 /* VWWThereminInput.mm */,
+				C6CE37AE168EC67C000F2A48 /* VWWThereminInputAxis.h */,
+				C6CE37AF168EC67C000F2A48 /* VWWThereminInputAxis.mm */,
+			);
+			name = Inputs;
+			sourceTree = "<group>";
+		};
+		C6DAB1D81691123B0056E769 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				C6DAB1DA169112530056E769 /* VWWFileSystem.h */,
+				C6DAB1DB169112540056E769 /* VWWFileSystem.m */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		C6EB8880168B921900DD1F3E /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				C606D2C5166AE40F00FA7B70 /* Model */,
+				C606D2BB166AE3A200FA7B70 /* Scenes */,
+			);
+			name = OpenGL;
+			sourceTree = "<group>";
+		};
+		C6F7536715C6313C00911E59 = {
+			isa = PBXGroup;
+			children = (
+				C6F7537C15C6313C00911E59 /* Theremin */,
+				C6F7539D15C6313C00911E59 /* ThereminTests */,
+				C6F7537515C6313C00911E59 /* Frameworks */,
+				C6F7537315C6313C00911E59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6F7537315C6313C00911E59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6F7537215C6313C00911E59 /* Theremin.app */,
+				C6F7539615C6313C00911E59 /* ThereminTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6F7537515C6313C00911E59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C632762417F0A708008B028F /* MessageUI.framework */,
+				C68DE757169E26DA001C54DB /* iAd.framework */,
+				C6E34B7E166AE52700D0AB2C /* GLKit.framework */,
+				C6E34B7F166AE52700D0AB2C /* OpenGLES.framework */,
+				C6F829AC1628C6E900C79CAA /* AudioToolbox.framework */,
+				C6F829AD1628C6E900C79CAA /* CoreAudio.framework */,
+				C6F829AE1628C6E900C79CAA /* CoreMotion.framework */,
+				C6F7537615C6313C00911E59 /* UIKit.framework */,
+				C6F7537815C6313C00911E59 /* Foundation.framework */,
+				C6F7537A15C6313C00911E59 /* CoreGraphics.framework */,
+				C6F7539715C6313C00911E59 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6F7537C15C6313C00911E59 /* Theremin */ = {
+			isa = PBXGroup;
+			children = (
+				C606D292166AE1E500FA7B70 /* Documents */,
+				C6F753CA15C63B7200911E59 /* Storyboards */,
+				C606D289166AE1E500FA7B70 /* Controller */,
+				C606D29F166AE1E500FA7B70 /* View */,
+				C606D294166AE1E500FA7B70 /* Model */,
+				C6F7537D15C6313C00911E59 /* Supporting Files */,
+				C6357CEB15C7A55C0074E722 /* images */,
+			);
+			path = Theremin;
+			sourceTree = "<group>";
+		};
+		C6F7537D15C6313C00911E59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE37A6168EBAE3000F2A48 /* VWWThereminConfiguration.h */,
+				C606D2AC166AE20C00FA7B70 /* main.m */,
+				C606D2AD166AE20C00FA7B70 /* Theremin-Info.plist */,
+				C606D2AE166AE20C00FA7B70 /* Theremin-Prefix.pch */,
+				C606D2AF166AE20C00FA7B70 /* VWWAppDelegate.h */,
+				C606D2B0166AE20C00FA7B70 /* VWWAppDelegate.mm */,
+				C6F7537F15C6313C00911E59 /* InfoPlist.strings */,
+				C6AA550A17EE7ECE004AAC8D /* VWWSettingsKeys.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6F7539D15C6313C00911E59 /* ThereminTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6F753A315C6313C00911E59 /* ThereminTests.h */,
+				C6F753A415C6313C00911E59 /* ThereminTests.mm */,
+				C6F7539E15C6313C00911E59 /* Supporting Files */,
+			);
+			path = ThereminTests;
+			sourceTree = "<group>";
+		};
+		C6F7539E15C6313C00911E59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6F7539F15C6313C00911E59 /* ThereminTests-Info.plist */,
+				C6F753A015C6313C00911E59 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6F753CA15C63B7200911E59 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C6F7538815C6313C00911E59 /* MainStoryboard_iPhone.storyboard */,
+				C6F7538B15C6313C00911E59 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		C6F829B51628C80B00C79CAA /* Apple CA Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6F829B61628C80B00C79CAA /* CADebugMacros.cpp */,
+				C6F829B71628C80B00C79CAA /* CADebugMacros.h */,
+				C6F829B81628C80B00C79CAA /* CADebugPrintf.h */,
+				C6F829B91628C80B00C79CAA /* CAMath.h */,
+				C6F829BA1628C80B00C79CAA /* CAStreamBasicDescription.cpp */,
+				C6F829BB1628C80B00C79CAA /* CAStreamBasicDescription.h */,
+				C6F829BC1628C80B00C79CAA /* CAXException.cpp */,
+				C6F829BD1628C80B00C79CAA /* CAXException.h */,
+			);
+			name = "Apple CA Helpers";
+			path = "../../Apple CA Helpers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6F7537115C6313C00911E59 /* Theremin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6F753A815C6313C00911E59 /* Build configuration list for PBXNativeTarget "Theremin" */;
+			buildPhases = (
+				C6F7536E15C6313C00911E59 /* Sources */,
+				C6F7536F15C6313C00911E59 /* Frameworks */,
+				C6F7537015C6313C00911E59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Theremin;
+			productName = Theremin;
+			productReference = C6F7537215C6313C00911E59 /* Theremin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6F7539515C6313C00911E59 /* ThereminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6F753AB15C6313C00911E59 /* Build configuration list for PBXNativeTarget "ThereminTests" */;
+			buildPhases = (
+				C6F7539115C6313C00911E59 /* Sources */,
+				C6F7539215C6313C00911E59 /* Frameworks */,
+				C6F7539315C6313C00911E59 /* Resources */,
+				C6F7539415C6313C00911E59 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6F7539C15C6313C00911E59 /* PBXTargetDependency */,
+			);
+			name = ThereminTests;
+			productName = ThereminTests;
+			productReference = C6F7539615C6313C00911E59 /* ThereminTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6F7536915C6313C00911E59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VWW_;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Zakk Hoyt";
+				TargetAttributes = {
+					C6F7537115C6313C00911E59 = {
+						DevelopmentTeam = J7U74N85YF;
+					};
+				};
+			};
+			buildConfigurationList = C6F7536C15C6313C00911E59 /* Build configuration list for PBXProject "Theremin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C6F7536715C6313C00911E59;
+			productRefGroup = C6F7537315C6313C00911E59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6F7537115C6313C00911E59 /* Theremin */,
+				C6F7539515C6313C00911E59 /* ThereminTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6F7537015C6313C00911E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F7538115C6313C00911E59 /* InfoPlist.strings in Resources */,
+				C6F7538A15C6313C00911E59 /* MainStoryboard_iPhone.storyboard in Resources */,
+				C6F7538D15C6313C00911E59 /* MainStoryboard_iPad.storyboard in Resources */,
+				C64ACE2917F691AE0099BD67 /* Images.xcassets in Resources */,
+				C60E4FF8169807C8006BD352 /* custom.strings in Resources */,
+				C63EDF30169BFB530036E49B /* paid_vs_free.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F7539315C6313C00911E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F753A215C6313C00911E59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6F7539415C6313C00911E59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6F7536E15C6313C00911E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F829BE1628C80B00C79CAA /* CADebugMacros.cpp in Sources */,
+				C6F829BF1628C80B00C79CAA /* CAStreamBasicDescription.cpp in Sources */,
+				C6F829C01628C80B00C79CAA /* CAXException.cpp in Sources */,
+				C606D2A4166AE1E600FA7B70 /* VWWThereminSettingsViewController.mm in Sources */,
+				C6AA54FD17EE6A70004AAC8D /* VWWSettingsAxisViewController.m in Sources */,
+				C606D2A7166AE1E600FA7B70 /* VWWMotionMonitor.m in Sources */,
+				C606D2A8166AE1E600FA7B70 /* VWWThereminNotes.m in Sources */,
+				C606D2A9166AE1E600FA7B70 /* VWWThereminSynthesizer.mm in Sources */,
+				C606D2B1166AE20C00FA7B70 /* main.m in Sources */,
+				C606D2B3166AE20C00FA7B70 /* VWWAppDelegate.mm in Sources */,
+				C606D2C0166AE3A200FA7B70 /* VWWCubeScene.m in Sources */,
+				C606D2C1166AE3A200FA7B70 /* VWWScene.m in Sources */,
+				C63660E417EE4D720004C22E /* VWWSettingsViewController.m in Sources */,
+				C632762317F0A68C008B028F /* VWWSettingsGeneralViewController.m in Sources */,
+				C6AA551017EE8BE4004AAC8D /* VWWSettingsAmplitudeTableViewCell.m in Sources */,
+				C606D2CB166AE40F00FA7B70 /* VWWSquareModel.m in Sources */,
+				C6E34B9D166AE89600D0AB2C /* VWWThereminViewController.mm in Sources */,
+				C6EB888A168B975600DD1F3E /* VWWThereminAboutViewController.m in Sources */,
+				C6EB88AC168BF2A100DD1F3E /* VWWThereminConfigInputFrequencyViewController.mm in Sources */,
+				C6B3E963168BFBB100298AF5 /* VWWConfigInputFrequencyView.m in Sources */,
+				C6CE37B0168EC67C000F2A48 /* VWWThereminInputAxis.mm in Sources */,
+				C6AA550917EE71D4004AAC8D /* VWWSettingsParametersTableViewCell.m in Sources */,
+				C6CE37B2168EC804000F2A48 /* VWWThereminInput.mm in Sources */,
+				C6CE37B8168ECFC4000F2A48 /* VWWThereminInputs.mm in Sources */,
+				C6CE37BB168ED120000F2A48 /* VWWLine.m in Sources */,
+				C6AA550D17EE8BD0004AAC8D /* VWWSettingsFrequencyTableViewCell.m in Sources */,
+				C6AA551317EE8BF3004AAC8D /* VWWSettingsSensitivityTableViewCell.m in Sources */,
+				C6CE37BE168F1D3F000F2A48 /* VWWThereminConfigInputWaveformsViewController.mm in Sources */,
+				C6CE37C1168F1DB7000F2A48 /* VWWThereminConfigInputSensitivityViewController.mm in Sources */,
+				C6A94FD4168FC8AE003F2AFE /* VWWConfigInputWaveformView.m in Sources */,
+				C6A94FD7168FC8C1003F2AFE /* VWWConfigInputSensitivityView.m in Sources */,
+				C6747F66168FEC40007133AD /* VWWThereminConfigInputEffectsViewController.mm in Sources */,
+				C6747F6A168FECDF007133AD /* VWWConfigInputEffectsView.m in Sources */,
+				C6AA551617EE8C03004AAC8D /* VWWSettingsWaveformTableViewCell.m in Sources */,
+				C6AA550017EE6C41004AAC8D /* VWWSettingsAxisTableViewCell.m in Sources */,
+				C6DAB1DC169112540056E769 /* VWWFileSystem.m in Sources */,
+				C6F23BC9169951B9001C8FA8 /* VWWThereminConfigInputAmplitudeViewController.mm in Sources */,
+				C6AA54F917EE662A004AAC8D /* VWWSettingsTableViewCell.m in Sources */,
+				C6AA551917EE8C16004AAC8D /* VWWSettingsEffectTableViewCell.m in Sources */,
+				C6F23BCD16995399001C8FA8 /* VWWConfigInputAmplitudeView.m in Sources */,
+				C6F23BD0169A96BD001C8FA8 /* VWWThereminConfigInputKeyViewController.mm in Sources */,
+				C6AA550617EE71BB004AAC8D /* VWWSettingsParametersViewController.m in Sources */,
+				C6F23BD3169A96D6001C8FA8 /* VWWConfigInputKeyView.m in Sources */,
+				C6C1BC2C169BA4B400AD8244 /* VWWThereminEffectNoteKey.m in Sources */,
+				C63EDF29169BC74F0036E49B /* VWWThereminAboutView.m in Sources */,
+				C63EDF2D169BC83F0036E49B /* VWWThereminSettingsView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F7539115C6313C00911E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F753A515C6313C00911E59 /* ThereminTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6F7539C15C6313C00911E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6F7537115C6313C00911E59 /* Theremin */;
+			targetProxy = C6F7539B15C6313C00911E59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6F7537F15C6313C00911E59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F7538015C6313C00911E59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C6F7538815C6313C00911E59 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F7538915C6313C00911E59 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C6F7538B15C6313C00911E59 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F7538C15C6313C00911E59 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C6F753A015C6313C00911E59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F753A115C6313C00911E59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6F753A615C6313C00911E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zakk hoyt (65NJ4ZPC44)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zakk hoyt (65NJ4ZPC44)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "E86FD57C-EF1F-4F78-B8EC-5AD9104A8818";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E86FD57C-EF1F-4F78-B8EC-5AD9104A8818";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6F753A715C6313C00911E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zakk hoyt (65NJ4ZPC44)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zakk hoyt (65NJ4ZPC44)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "E86FD57C-EF1F-4F78-B8EC-5AD9104A8818";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E86FD57C-EF1F-4F78-B8EC-5AD9104A8818";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6F753A915C6313C00911E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zakk hoyt (65NJ4ZPC44)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zakk hoyt (65NJ4ZPC44)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Theremin/Theremin-Prefix.pch";
+				INFOPLIST_FILE = "Theremin/Theremin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D474C98E-AC26-4441-993A-52D7975ADD6A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D474C98E-AC26-4441-993A-52D7975ADD6A";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C6F753AA15C6313C00911E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zakk hoyt (65NJ4ZPC44)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zakk hoyt (65NJ4ZPC44)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Theremin/Theremin-Prefix.pch";
+				INFOPLIST_FILE = "Theremin/Theremin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D474C98E-AC26-4441-993A-52D7975ADD6A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D474C98E-AC26-4441-993A-52D7975ADD6A";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C6F753AC15C6313C00911E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Theremin.app/Theremin";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Theremin/Theremin-Prefix.pch";
+				INFOPLIST_FILE = "ThereminTests/ThereminTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C6F753AD15C6313C00911E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Theremin.app/Theremin";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Theremin/Theremin-Prefix.pch";
+				INFOPLIST_FILE = "ThereminTests/ThereminTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6F7536C15C6313C00911E59 /* Build configuration list for PBXProject "Theremin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F753A615C6313C00911E59 /* Debug */,
+				C6F753A715C6313C00911E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6F753A815C6313C00911E59 /* Build configuration list for PBXNativeTarget "Theremin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F753A915C6313C00911E59 /* Debug */,
+				C6F753AA15C6313C00911E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6F753AB15C6313C00911E59 /* Build configuration list for PBXNativeTarget "ThereminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F753AC15C6313C00911E59 /* Debug */,
+				C6F753AD15C6313C00911E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6F7536915C6313C00911E59 /* Project object */;
+}
